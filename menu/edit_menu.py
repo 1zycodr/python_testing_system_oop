@@ -1,0 +1,2 @@
+class EditMenu:
+    pass

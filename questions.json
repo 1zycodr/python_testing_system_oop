@@ -1,0 +1,39 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "text": "2 + 2 = ?",
+            "answers": [
+                4,
+                "четыре",
+                "four"
+            ],
+            "stat_cor": 0,
+            "stat_wrg": 0
+        },
+        {
+            "id": 2,
+            "text": "3 + 5 = ?",
+            "answers": [
+                8,
+                "восемь",
+                "eight"
+            ],
+            "stat_cor": 0,
+            "stat_wrg": 0
+        },
+        {
+            "id": 3,
+            "text": "34 - 33 = ?",
+            "answers": [
+                1,
+                "один",
+                "one"
+            ],
+            "stat_cor": 0,
+            "stat_wrg": 0
+        }
+    ],
+    "test_questions_number": 3,
+    "max_id": 3
+}

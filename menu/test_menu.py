@@ -1,0 +1,2 @@
+class TestMenu:
+    pass
