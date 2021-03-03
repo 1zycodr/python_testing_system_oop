@@ -15,17 +15,17 @@ class MainMenu(BaseMenu):
     }
 
     def show(self):
+        input_func = get_option_input()
+            
+        def get_input():
+            selected_option = input_func('Enter option: ')
+            if selected_option not in self.next_menus.keys():
+                raise UserInputOptionException
+            return selected_option
+
         while True:
             print(self.header)
             print(self.options)
-
-            input_func = get_option_input()
-            
-            def get_input():
-                selected_option = input_func('Enter option: ')
-                if selected_option not in self.next_menus.keys():
-                    raise UserInputOptionException
-                return selected_option
             
             selected_option = self.input_secure_wrap(get_input)
 
