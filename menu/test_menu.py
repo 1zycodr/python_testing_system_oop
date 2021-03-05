@@ -6,14 +6,19 @@ import random
 
 class TestMenu(BaseMenu):
     header = '---------- Test Menu ----------'
+    options = "[1] - Restart test\n[2] - Back"
+    next_menus = ('1', '2')
     
-    def __init__(self):
-        self.options = "[1] - Restart test\n[2] - Back"
-        self.next_menus = ('1', '2')
-
 
     def test(self, storage):
-        questions = storage.questions
+        questions = storage.questions.copy()
+
+        questions = [
+            question
+            for question in questions
+            if len(question.answers) != 0
+        ]
+
         test_questions_number = storage.test_questions_number
 
         random.shuffle(questions)

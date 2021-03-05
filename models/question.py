@@ -19,6 +19,18 @@ class Question:
         else:
             self.answers = answers
 
+
+    def __str__(self):
+        string = "[id: {}]\t{}\n\tAnswers: {}\n\tCorrect answers: {}\n\tWrong answers: {}\n"
+        answers = ', '.join(self.answers)
+        return string.format(
+            self.id, 
+            self.text, 
+            answers, 
+            self.stat_cor, 
+            self.stat_wrg
+        )
+    
     
     @classmethod
     def from_dict(cls, data):

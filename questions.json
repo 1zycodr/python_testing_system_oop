@@ -1,6 +1,28 @@
 {
     "questions": [
         {
+            "id": 1,
+            "text": "4 + 5 = ?",
+            "answers": [
+                "9",
+                "девять",
+                "nine"
+            ],
+            "stat_cor": 9,
+            "stat_wrg": 1
+        },
+        {
+            "id": 2,
+            "text": "2 + 2 = ?",
+            "answers": [
+                "4",
+                "четыре",
+                "four"
+            ],
+            "stat_cor": 7,
+            "stat_wrg": 2
+        },
+        {
             "id": 3,
             "text": "34 - 33 = ?",
             "answers": [
@@ -8,32 +30,27 @@
                 "один",
                 "one"
             ],
-            "stat_cor": 3,
-            "stat_wrg": 1
+            "stat_cor": 0,
+            "stat_wrg": 0
         },
         {
-            "id": 2,
-            "text": "4 + 5 = ?",
-            "answers": [
-                "9",
-                "девять",
-                "nine"
-            ],
-            "stat_cor": 2,
-            "stat_wrg": 1
+            "id": 4,
+            "text": "5 + 5 = ?",
+            "answers": [],
+            "stat_cor": 0,
+            "stat_wrg": 0
         },
         {
-            "id": 1,
-            "text": "2 + 2 = ?",
+            "id": 6,
+            "text": "5 + 10 = ?",
             "answers": [
-                "4",
-                "четыре",
-                "four"
+                "15",
+                "fifteen"
             ],
-            "stat_cor": 1,
-            "stat_wrg": 2
+            "stat_cor": 0,
+            "stat_wrg": 0
         }
     ],
-    "test_questions_number": 3,
-    "max_id": 3
+    "test_questions_number": 4,
+    "max_id": 6
 }
